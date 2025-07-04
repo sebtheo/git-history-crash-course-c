@@ -36,4 +36,6 @@ This should be done using only the steps outlined in the guidance, and not using
 
 ## The Scenario
 
-TODO
+This repository contains a simple Python script which imports from a `.env` file. The `.env` file contains a secret which should not be committed to the repository. Additionally, the Python script contains a hardcoded secret which should also not be committed to the repository.
+
+The goal of this scenario is to remove both secrets from the Git history. Both secrets were committed in previous commits. The `.env` file can be removed from the Git history as a whole, whereas the hardcoded secret needs to be removed while preserving the rest of the file.
